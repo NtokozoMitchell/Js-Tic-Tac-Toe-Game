@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5, pink);
+    color: #333;
+}
+#tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+.cell {
+    background-color: #0be3f7;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 100px;
+}
+.cell:hover {
+    background-color: #b312aa;
+}
+@media (max-width: 600px) {
+    .cell {
+        width: 60px;
+        height: 60px;
+    }
+  
+    #tic-tac-toe-board {
+        grid-template-columns: repeat(3, 60px);
+        grid-template-rows: repeat(3, 60px);
+    }
+}
+.game-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #921812;
+}
+
+#resetButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #0a0101;
+  background-color: #2149b5;
+  border: none;
+  cursor: help;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+  background-color: #106910;
+}
+
+h2{
+    text-align: center;
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    transition: var(green,rgb(9, 9, 55),yelllow,orange);
+    animation: disco 1s infinite alternate;
+}
+@keyframes disco {
+    0% {
+        color: #ff0000; /* Red */
+        text-shadow: 0 0 10px #ff0000;
+    }
+    14% {
+        color: #ff9900; /* Orange */
+        text-shadow: 0 0 10px #ff9900;
+    }
+    28% {
+        color: #ffff00; /* Yellow */
+        text-shadow: 0 0 10px #ffff00;
+    }
+    42% {
+        color: #33cc33; /* Green */
+        text-shadow: 0 0 10px #33cc33;
+    }
+    56% {
+        color: #0066ff; /* Blue */
+        text-shadow: 0 0 10px #0066ff;
+    }
+    70% {
+        color: #6600cc; /* Purple */
+        text-shadow: 0 0 10px #6600cc;
+    }
+    84% {
+        color: #ff66b2; /* Pink */
+        text-shadow: 0 0 10px #ff66b2;
+    }
+    100% {
+        color: #ff0000; /* Red */
+        text-shadow: 0 0 10px #ff0000;
+    }
+}
