@@ -1,5 +1,6 @@
 # Js-Tic-Tac-Toe-Game
-In this Project idea{Tic-Tac-Toe Game},I want to learn about game development.
+In this Project 
+{Tic-Tac-Toe Game},I want to learn about game development.
 I find this project particularly effective for showing how JavaScript enhances user experience on web pages.
 it demonstrates key programming concepts in a familiar and relatable context.
 
